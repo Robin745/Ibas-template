@@ -1,0 +1,141 @@
+.cd__main {
+  display: block !important;
+  background: hsl(184, 96%, 18%) !important;
+  height: 35vh !important;
+  /* min-height: 720px; */
+}
+.nav-bar {
+  height: 70px;
+  background-color: #02555b;
+  padding: 0 20px !important;
+}
+/* Profile Picture */
+.profile-pic {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.profile-menu .dropdown-menu {
+  right: 0;
+  left: unset;
+}
+.profile-menu .fa-fw {
+  margin-right: 10px;
+}
+
+.toggle-change::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+.dropdown-menu[data-bs-popper] {
+  left: -100px !important;
+}
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+  position: relative;
+}
+.nav-link :hover {
+  color: red !important;
+}
+.bell-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  color: white;
+  font-size: 18px;
+}
+.nav-item .active::after {
+  border-bottom: 3px solid #89e18b;
+  position: absolute;
+  content: " ";
+  bottom: 5px;
+  left: 0;
+  right: 0;
+}
+.nav-link {
+  font-size: 14px !important;
+  &.active,
+  &.show {
+    color: #89e18b !important;
+  }
+}
+.container-fluid {
+  margin: 0 20px !important;
+}
+
+/* tables styles */
+
+.container {
+  padding: 2rem;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.feature-intro {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-intro-item .page-title {
+  font-size: 20px;
+}
+.feature-intro-item .title {
+  color: #5f8a40;
+}
+.feature-intro-item .title span {
+  font-weight: 700;
+}
+.first-button {
+  background-color: #2d9596 !important;
+}
+.second-button {
+  background-color: #28b4aa !important;
+}
+.third-button {
+  background-color: #df5454 !important;
+}
+.table tr {
+  vertical-align: middle;
+  border-width: 0 0 2px 0;
+  border: 5px;
+  border-color: #d2e9e9 !important;
+}
+.last-tr {
+  border-width: 0 0 15px 0 !important;
+}
+.table th {
+  padding-left: 50px !important;
+  background-color: #d2e9e9 !important;
+  font-weight: 400;
+}
+.table th:first-child {
+  border-radius: 10px 0 0 10px !important;
+  border-bottom: none;
+}
+.table th:last-child {
+  border-radius: 0 10px 10px 0 !important;
+  border-bottom: none;
+}
+.table td {
+  font-size: 14px;
+  padding-left: 50px !important;
+}
+.btn {
+  --bs-btn-border-radius: 20px !important;
+  width: 80px;
+  height: 25px !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  font-size: 14px !important;
+}
