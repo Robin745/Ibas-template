@@ -26,7 +26,10 @@
   <body>
     <main class="cd__main">
       <!-- Start DEMO HTML (Use the following code into your project)-->
-      <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="background-color: #02555b !important; padding: 0 20px"
+      >
         <div class="container-fluid">
           <div class="navbar-brand">
             <img
@@ -39,6 +42,17 @@
           <a class="navbar-brand" href="#" style="font-weight: 300"
             >Help Desk</a
           >
+          <a class="navbar-brand sidebar-btn" href="#" style="font-weight: 300"></a>
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="far fa-caret-square-right"></i>
+            </button>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -79,8 +93,6 @@
                       alt="Profile Picture"
                     />
                   </div>
-                  <!-- You can also use icon as follows: -->
-                  <!--  <i class="fas fa-user"></i> -->
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
@@ -106,138 +118,208 @@
         </div>
       </nav>
       <!-- END EDMO HTML (Happy Coding!)-->
-      <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left">
-          <div
-            class="card"
-            style="width: 18rem; margin: 10px; border-radius: 10px"
-          >
-            <img
-              style="margin: 15px; border-radius: 10px"
-              src="https://source.unsplash.com/300x300?boy"
-              alt="Profile Picture"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-9">
-            <div class="container">
-              <div class="feature-intro px-2">
-                <div class="feature-intro-item">
-                  <h1 class="page-title">Support Request List</h1>
-                </div>
-                <div class="feature-intro-item">
-                  <p class="title"><span>4 </span>Active Request(s)</p>
+      <div class="main-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div
+                class="sidebar container-fluid"
+                style="width: 18rem; border-radius: 10px"
+              >
+                <div class="card" style="width: 18rem">
+                  <img
+                    style="padding: 5px; border-radius: 10px"
+                    src="https://source.unsplash.com/300x300?boy"
+                    alt="Profile Picture"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <button
+                      class="btn"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasExample"
+                      aria-controls="offcanvasExample"
+                    >
+                      <i class="far fa-caret-square-right"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Client IP</th>
-                    <th scope="col">User Email ID</th>
-                    <th scope="col">Room Slug</th>
-                    <th scope="col">Chatroom</th>
-                    <th scope="col">Ticket</th>
-                    <th scope="col">Clear Request</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>
-                      <button type="button" class="btn first-button">
-                        Enter
+              <div>
+                <div
+                  class="offcanvas offcanvas-start"
+                  tabindex="-1"
+                  id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                      Offcanvas
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div>
+                      Some text as placeholder. In real life you can have the
+                      elements you have chosen. Like, text, images, lists, etc.
+                    </div>
+                    <div class="dropdown mt-3">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                      >
+                        Dropdown button
                       </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn second-button">
-                        View
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn third-button">
-                        Clear
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>
-                      <button type="button" class="btn first-button">
-                        Enter
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn second-button">
-                        View
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn third-button">
-                        Clear
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="last-tr">
-                    <td>3</td>
-                    <td>Larry the Bird</td>
-                    <td>Moshiur</td>
-                    <td>@twitter</td>
-                    <td>
-                      <button type="button" class="btn first-button">
-                        Enter
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn second-button">
-                        View
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn third-button">
-                        Clear
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="last-tr">
-                    <td>3</td>
-                    <td>Chairman of SBKB</td>
-                    <td>Shihab</td>
-                    <td>@instragram</td>
-                    <td>
-                      <button type="button" class="btn first-button">
-                        Enter
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn second-button">
-                        View
-                      </button>
-                    </td>
-                    <td>
-                      <button type="button" class="btn third-button">
-                        Clear
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9 col-sm-12">
+              <div class="container-fluid table-container">
+                <div class="feature-intro px-2">
+                  <div class="feature-intro-item">
+                    <h1 class="page-title">Support Request List</h1>
+                  </div>
+                  <div class="feature-intro-item">
+                    <p class="title"><span>4 </span>Active Request(s)</p>
+                  </div>
+                </div>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Client IP</th>
+                      <th scope="col">User Email ID</th>
+                      <th scope="col">Room Slug</th>
+                      <th scope="col">Chatroom</th>
+                      <th scope="col">Ticket</th>
+                      <th scope="col">Clear Request</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>
+                        <button type="button" class="btn first-button">
+                          Enter
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn second-button">
+                          View
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn third-button">
+                          Clear
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                      <td>
+                        <button type="button" class="btn first-button">
+                          Enter
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn second-button">
+                          View
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn third-button">
+                          Clear
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Larry the Bird</td>
+                      <td>Moshiur</td>
+                      <td>@twitter</td>
+                      <td>
+                        <button type="button" class="btn first-button">
+                          Enter
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn second-button">
+                          View
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn third-button">
+                          Clear
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="last-tr">
+                      <td>3</td>
+                      <td>Chairman of SBKB</td>
+                      <td>Shihab</td>
+                      <td>@instragram</td>
+                      <td>
+                        <button type="button" class="btn first-button">
+                          Enter
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn second-button">
+                          View
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn third-button">
+                          Clear
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-          <!--/span-->
         </div>
+        <!-- <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-12 col-sm-9"></div>
+        </div> -->
         <!--/row-->
       </div>
     </main>
