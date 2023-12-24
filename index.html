@@ -42,10 +42,11 @@
           <a class="navbar-brand" href="#" style="font-weight: 300"
             >Help Desk</a
           >
-          <a class="navbar-brand sidebar-btn" href="#" style="font-weight: 300"></a>
+          <a class="navbar-brand" href="#" style="font-weight: 300"></a>
             <button
-              class="btn"
+              class="btn sidebar-btn"
               type="button"
+              title="Open Sidebar"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"
@@ -56,6 +57,7 @@
           <button
             class="navbar-toggler"
             type="button"
+            title="Open "
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
@@ -124,36 +126,41 @@
             <div class="col-lg-3">
               <div
                 class="sidebar container-fluid"
-                style="width: 18rem; border-radius: 10px"
+                style="border-radius: 10px"
               >
-                <div class="card" style="width: 18rem">
+                <div class="card">
                   <img
-                    style="padding: 5px; border-radius: 10px"
-                    src="https://source.unsplash.com/300x300?boy"
+                    class="card-image"
+                    src="https://source.unsplash.com/300x300?professional man"
                     alt="Profile Picture"
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                  <div class="text-body">
+                    <p class="card-text fs-6">Mohammad Zamal Uddin</p>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Help Desk Officer
+                    </p>
+                    <p class="card-text fw-lighter">
+                      ID 170010
                     </p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                  </ul>
-                  <div class="card-body">
-                    <button
-                      class="btn"
-                      type="button"
-                      data-bs-toggle="offcanvas"
-                      data-bs-target="#offcanvasExample"
-                      aria-controls="offcanvasExample"
-                    >
-                      <i class="far fa-caret-square-right"></i>
-                    </button>
+                </div>
+                <div class="card px-4">
+                  <div class="text-body" style="text-align: left;">
+                    <i class="fas fa-building sidebar-icon"></i>
+                    <p class="card-text fw-lighter">Organization</p>
+                    <p class="card-text">
+                      National Borad of Revenue
+                    </p>
+                  </div>
+                  <div class="text-body" style="text-align: left;">
+                    <i class="fas fa-map-marker-alt sidebar-icon"></i>
+                    <p class="card-text fw-lighter">Address</p>
+                    <p class="card-text">
+                      <span>Plot# F1/A Agargaon</span>
+                      <span>Sher-e-Bangla Nagor, Dhaka-1207</span>
+                      <span>Telephone: 022222217700 Ex-0140</span>
+                      <span>Email: customsn@gmail.com</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -166,7 +173,7 @@
                 >
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                      Offcanvas
+                      Help Desk Officer Info
                     </h5>
                     <button
                       type="button"
@@ -176,30 +183,46 @@
                     ></button>
                   </div>
                   <div class="offcanvas-body">
-                    <div>
-                      Some text as placeholder. In real life you can have the
-                      elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                      >
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
+                    <div
+                class="container-fluid"
+                style="border-radius: 10px; margin: auto;"
+              >
+                <div class="card">
+                  <img
+                    class="card-image"
+                    src="https://source.unsplash.com/300x300?professional man"
+                    alt="Profile Picture"
+                  />
+                  <div class="text-body">
+                    <p class="card-text fs-6">Mohammad Zamal Uddin</p>
+                    <p class="card-text">
+                      Help Desk Officer
+                    </p>
+                    <p class="card-text fw-lighter">
+                      ID 170010
+                    </p>
+                  </div>
+                </div>
+                <div class="card px-4">
+                  <div class="text-body" style="text-align: left;">
+                    <i class="fas fa-building sidebar-icon"></i>
+                    <p class="card-text fw-lighter">Organization</p>
+                    <p class="card-text">
+                      National Borad of Revenue
+                    </p>
+                  </div>
+                  <div class="text-body" style="text-align: left;">
+                    <i class="fas fa-map-marker-alt sidebar-icon"></i>
+                    <p class="card-text fw-lighter">Address</p>
+                    <p class="card-text">
+                      <span>Plot# F1/A Agargaon</span>
+                      <span>Sher-e-Bangla Nagor, Dhaka-1207</span>
+                      <span>Telephone: 022222217700 Ex-0140</span>
+                      <span>Email: customsn@gmail.com</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
                   </div>
                 </div>
               </div>
@@ -214,6 +237,7 @@
                     <p class="title"><span>4 </span>Active Request(s)</p>
                   </div>
                 </div>
+              <div style="overflow: auto;">
                 <table class="table table-hover">
                   <thead>
                     <tr>
@@ -313,6 +337,7 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
               </div>
             </div>
           </div>
