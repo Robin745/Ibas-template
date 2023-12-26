@@ -92,12 +92,24 @@
   width: 18rem;
   margin-bottom: 20px;
   padding: 20px 0;
+  border: none !important;
+}
+.side-bar-card {
+  width: 100%;
+  background-color: #f6f6f7 !important;
+  border: none !important;
+}
+.side-bar-card:last-child {
+  height: 59vh;
 }
 .card-image {
   max-width: 100px;
-  padding: 5px;
   border-radius: 50%;
+}
+.side-bar-card-image {
+  height: 100px;
   margin: auto;
+  padding: 5px;
 }
 .text-body {
   /* display: flex;
@@ -115,9 +127,14 @@
 }
 /* tables styles */
 .table-container {
+  height: 87vh;
   padding: 25px 50px;
-  background-color: white !important;
+  background-color: #f6f6f7 !important;
   border-radius: 10px;
+}
+.table-wrapper {
+  overflow: auto;
+  padding: 0 2rem;
 }
 .feature-intro {
   display: flex;
@@ -134,12 +151,15 @@
 }
 .first-button {
   background-color: #2d9596 !important;
+  --bs-btn-border-radius: 20px !important;
 }
 .second-button {
   background-color: #28b4aa !important;
+  --bs-btn-border-radius: 20px !important;
 }
 .third-button {
   background-color: #df5454 !important;
+  --bs-btn-border-radius: 20px !important;
 }
 .table {
   overflow: scroll;
@@ -174,9 +194,15 @@ tbody tr {
 .table td {
   font-size: 14px;
   padding-left: 50px !important;
+  background-color: #f6f6f7 !important;
+}
+.table td:first-child {
+  border-radius: 10px 0 0 10px !important;
+}
+.table td:last-child {
+  border-radius: 0 10px 10px 0 !important;
 }
 td .btn {
-  --bs-btn-border-radius: 20px !important;
   width: 80px;
   height: 25px !important;
   color: white !important;
@@ -184,6 +210,15 @@ td .btn {
   align-items: center !important;
   justify-content: center;
   font-size: 14px !important;
+}
+.ticket-view-modal {
+  --bs-modal-width: 700px !important;
+}
+.ticket-modal-logo {
+  position: absolute;
+  top: 22px;
+  left: 320px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 990px) {
   .sidebar {
@@ -197,6 +232,6 @@ td .btn {
 }
 @media only screen and (min-width: 1400px) {
   .container {
-    min-width: 1450px !important;
+    min-width: 95% !important;
   }
 }
