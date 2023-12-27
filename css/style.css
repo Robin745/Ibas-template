@@ -48,6 +48,11 @@
 .navbar-brand {
   color: white !important;
 }
+.navbar-image {
+  background-color: white;
+  width: 8.5vh;
+  border-radius: 50px;
+}
 .nav-item {
   padding: 0 20px;
   float: left;
@@ -80,6 +85,9 @@
   &.show {
     color: #89e18b !important;
   }
+}
+.sidebar-btn {
+  font-size: 25px !important;
 }
 .container-fluid {
   margin: 10px 0 !important;
@@ -128,22 +136,24 @@
 /* tables styles */
 .table-container {
   height: 87vh;
-  padding: 25px 50px;
+  padding: 25px 40px;
   background-color: #f6f6f7 !important;
   border-radius: 10px;
 }
 .table-wrapper {
   overflow: auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 .feature-intro {
   display: flex;
+  padding: 0 2rem;
   justify-content: space-between;
 }
 .feature-intro-item .page-title {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 .feature-intro-item .title {
+  font-size: 1rem;
   color: #5f8a40;
 }
 .feature-intro-item .title span {
@@ -180,8 +190,8 @@ tbody tr {
 .table th {
   padding-left: 50px !important;
   background-color: #d2e9e9 !important;
-  font-weight: 400;
-  font-size: 16px !important;
+  font-weight: 500;
+  font-size: 0.8rem !important;
 }
 .table th:first-child {
   border-radius: 10px 0 0 10px !important;
@@ -192,7 +202,7 @@ tbody tr {
   border-bottom: none;
 }
 .table td {
-  font-size: 14px;
+  font-size: 0.8rem;
   padding-left: 50px !important;
   background-color: #f6f6f7 !important;
 }
@@ -209,20 +219,82 @@ td .btn {
   display: flex !important;
   align-items: center !important;
   justify-content: center;
-  font-size: 14px !important;
+  font-size: 0.8rem !important;
 }
 .ticket-view-modal {
-  --bs-modal-width: 700px !important;
+  height: 460px;
+  overflow: auto;
+}
+.modal-header {
+  justify-content: center !important;
+}
+.ticket-view-modal {
+  --bs-modal-width: 120vh !important;
 }
 .ticket-modal-logo {
   position: absolute;
-  top: 22px;
-  left: 320px;
-  margin: 0 auto;
+  top: 4.5vh;
 }
+.issue-details-button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 4vh;
+  font-size: 0.8rem;
+}
+
+/* Modal View Details classes */
+
+.field-wrapper {
+  height: 10vh;
+}
+.field-wrapper p {
+  font-size: 14px;
+  color: #000;
+  margin: 2px 0px 2px 0px;
+}
+
+.field-label {
+  display: flex;
+  width: 180px;
+  text-align: left;
+}
+.field-label p {
+  font-size: 0.1rem;
+  color: #6c7169;
+}
+
+.field-divider {
+  width: 20px;
+}
+
+.field-value {
+  width: calc(100% - 210px);
+  text-align: left;
+}
+.field-value p {
+  color: #246c71;
+  margin: 0;
+}
+
 @media only screen and (max-width: 990px) {
+  .nav-item .active::after {
+    border-bottom: 2px solid #89e18b;
+    bottom: 0;
+  }
   .sidebar {
     display: none;
+  }
+  .ticket-modal-logo {
+    top: 3.5vh;
+  }
+  .ticket-view-modal {
+    --bs-modal-width: 80vh !important;
+    /* height: auto !important; */
+  }
+  .table-container {
+    padding: 20px 20px;
   }
 }
 @media only screen and (min-width: 990px) {
@@ -233,5 +305,30 @@ td .btn {
 @media only screen and (min-width: 1400px) {
   .container {
     min-width: 95% !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-title {
+    font-size: 16px !important;
+  }
+  .navbar-image {
+    width: 5.5vh;
+  }
+  .table-wrapper {
+    padding: 1rem 0.5rem;
+  }
+  .feature-intro {
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nav-title {
+    font-size: 14px !important;
+  }
+  .feature-intro-item .page-title {
+    font-size: 0.9rem;
+  }
+  .feature-intro-item .title {
+    font-size: 0.8rem;
   }
 }
